@@ -9,7 +9,7 @@ jobs:
     uses: demo-Organization-m/dt-module-python-pipeline-repo/.github/workflows/python-pipeline.yml@main  # Ensure you reference the correct branch (main)
     with:
       repo_name: 'demo-Organization-m/demo-Organization-m-dt-python-app1-testing-repo'
-      deploy_env: 'staging'  # Example environment
+      deploy_env: 'dev'  # Example environment
       build_artifacts: true
       python_version: '3.9'  # Example version
     secrets: inherit
