@@ -6,9 +6,9 @@ on:
 jobs:
   call-reusable-workflow:
     name: Reuse Python Pipeline
-    uses: aeiforo-co-uk/dt-module-python-pipeline-repo/.github/workflows/python-pipeline.yml@main  # Ensure you reference the correct branch (main)
+    uses: demo-Organization-m/demo-Organization-m-dt-python-app1-testing-repo/.github/workflows/python-pipeline.yml@main  # Ensure you reference the correct branch (main)
     with:
-      repo_name: 'aeiforo-co-uk/demo-Organization-m-dt-python-app1-testing-repo'
+      repo_name: 'demo-Organization-m/demo-Organization-m-dt-python-app1-testing-repo'
       deploy_env: 'staging'  # Example environment
       build_artifacts: true
       python_version: '3.9'  # Example version
