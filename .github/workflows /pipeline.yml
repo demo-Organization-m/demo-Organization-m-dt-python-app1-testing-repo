@@ -8,13 +8,6 @@ jobs:
     name: Setup and Reuse Python Pipeline
     runs-on: ubuntu-latest
     steps:
-      # Step to configure SSH access
-      - name: Configure SSH Access for Private Repo
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.MODULE_DEPLOY_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       # Step to ensure the calling repo is checked out
       - name: Checkout Calling Repository
